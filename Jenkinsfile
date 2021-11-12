@@ -36,7 +36,7 @@ pipeline {
         }
 	stage('deleteDir') {
             steps {
-                sh 'sudo rm -rf /home/ec2-user/jenkins-data/jenkins_home/workspace/vorx-backend-app-pipeline*'
+                sh ''' rm -rf /home/ec2-user/jenkins-data/jenkins_home/workspace/vorx-backend-app-pipeline* '''
 
             }
         }
