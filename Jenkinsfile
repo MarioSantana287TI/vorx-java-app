@@ -39,7 +39,7 @@ pipeline {
     }
 	post {
         always {
-            echo 'Limpando diretorios'
+            echo 'Limpando diretorio'
             sh './jenkins/build/mvn.sh mvn clean'
 	    deleteDir()
         }
